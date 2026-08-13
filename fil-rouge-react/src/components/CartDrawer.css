@@ -1,0 +1,116 @@
+.cart-drawer__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(27, 43, 34, 0.35);
+  z-index: 60;
+  display: flex;
+  justify-content: flex-end;
+  animation: fade-in 180ms ease;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cart-drawer {
+  width: 420px;
+  max-width: 92vw;
+  height: 100%;
+  background: var(--color-bg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lift);
+  animation: slide-in 220ms ease;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(24px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.cart-drawer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-5);
+}
+
+.cart-drawer__header h3 {
+  margin: 0;
+}
+
+.cart-drawer__header button {
+  font-size: var(--fs-md);
+  color: var(--color-ink-faint);
+}
+
+.cart-drawer__list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cart-drawer__item {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cart-drawer__item img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.cart-drawer__item-name {
+  font-weight: 500;
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-sm);
+}
+
+.cart-drawer__qty {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+}
+
+.cart-drawer__qty button {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.cart-drawer__remove {
+  font-size: var(--fs-xs);
+  color: var(--color-ink-faint);
+  align-self: start;
+  text-decoration: underline;
+}
+
+.cart-drawer__remove:hover {
+  color: var(--color-danger);
+}
+
+.cart-drawer__footer {
+  padding-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cart-drawer__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
