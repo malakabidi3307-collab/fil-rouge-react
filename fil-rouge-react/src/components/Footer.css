@@ -6,9 +6,10 @@
 
 .site-footer__inner {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr;
   gap: var(--space-6);
   padding-block: var(--space-8);
+  height: 230px;
 }
 
 .site-footer__logo {

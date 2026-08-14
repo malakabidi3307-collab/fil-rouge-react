@@ -19,29 +19,29 @@ const products = [
     rating: 4.8,
     description:
       "Carafe soufflee a la bouche, forme galbee et bec verseur affine. Chaque piece est legerement unique, comme le veut le travail du verre.",
-    image: "https://images.unsplash.com/photo-1599933310642-9d1935f88296?w=800&q=80",
+    image: "https://decorzen.fr/img/p/4/0/0/7/0/40070.jpg",
   },
   {
     id: "p03",
-    name: "Bougie parfumee bois de santal",
+    name: "Bougie parfumee",
     category: "maison",
     price: 29,
     stock: 34,
     rating: 4.5,
     description:
       "Cire vegetale et meche en coton, parfum bois de santal et cedre. Environ 45 heures de combustion dans un contenant en ceramique reutilisable.",
-    image: "https://images.unsplash.com/photo-1602874801007-bd36c0f0c60b?w=800&q=80",
+    image: "https://ceriseetvinaigrette.fr/wp-content/uploads/2023/01/bougies-parfumees-21.jpg",
   },
   {
     id: "p04",
-    name: "Ceinture cuir pleine fleur",
+    name: "Ceinture cuir femme",
     category: "accessoires",
     price: 54,
     stock: 18,
     rating: 4.7,
     description:
-      "Ceinture en cuir pleine fleur tannage vegetal, boucle laiton brosse. Se patine avec le temps pour un rendu de plus en plus personnel.",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "Ceinture en cuir pleine, boucle laiton brosse. Se patine avec le temps pour un rendu de plus en plus personnel.",
+    image: "https://ceinture-cuir.com/2878-product_miniature/ceinture-en-cuir-femme-modele-rouzic.webp",
   },
   {
     id: "p05",
@@ -52,7 +52,7 @@ const products = [
     rating: 4.9,
     description:
       "Tisse en laine merinos, chaud sans etre lourd. Franges torsadees a la main, coloris naturel non teint.",
-    image: "https://images.unsplash.com/photo-1580301762395-83a3f4321f5e?w=800&q=80",
+    image: "https://th.bing.com/th/id/OIP.RYzM93Jqk-SOovNciYMPlwHaHa?w=217&h=217&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
   },
   {
     id: "p06",
@@ -74,7 +74,7 @@ const products = [
     rating: 4.3,
     description:
       "Trousse compacte en cuir grain naturel, doublure impermeable et fermeture eclair laiton. Format ideal pour les courts sejours.",
-    image: "https://images.unsplash.com/photo-1547949003-9792a18a2645?w=800&q=80",
+    image: "https://tse3.mm.bing.net/th/id/OIP.yTryF8awjt3mZNnjpJ1ycwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     id: "p08",
@@ -96,7 +96,7 @@ const products = [
     rating: 4.7,
     description:
       "Melange laine et soie, tissage leger toute saison. Bordure surpiquee main, coloris terreux intemporels.",
-    image: "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&q=80",
+    image: "https://tse2.mm.bing.net/th/id/OIP.f9ImPLynfLOnaZRMAiFprwHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     id: "p10",
@@ -118,7 +118,7 @@ const products = [
     rating: 4.5,
     description:
       "Housse en lin lave, tombe souple et texture naturelle. Garnissage plume et duvet, fermeture invisible.",
-    image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=800&q=80",
+    image: "https://www.decofundas.cl/wp-content/uploads/2023/08/fundas-para-sillon-cojin.jpeg",
   },
   {
     id: "p12",

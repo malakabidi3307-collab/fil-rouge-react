@@ -49,10 +49,11 @@ function Header() {
             <div className="site-header__user">
               <button
                 type="button"
-                className="site-header__user-trigger"
+                className="w-9 h-9 rounded-full bg-[#1B2B22] text-[#F6F4EF] flex items-center justify-center font-semibold text-sm hover:opacity-90 transition"
                 onClick={() => setIsMenuOpen((open) => !open)}
+                aria-label={`Menu de ${user.name}`}
               >
-                Bonjour, {user.name.split(" ")[0]}
+                {user.name.charAt(0).toUpperCase()}
               </button>
 
               {isMenuOpen && (

@@ -30,7 +30,7 @@ function Footer() {
       </div>
 
       <div className="container site-footer__bottom">
-        <span>© {year} ShopEase — Projet pédagogique React / Zustand.</span>
+        <span>© {year} ShopEase.</span>
       </div>
     </footer>
   );

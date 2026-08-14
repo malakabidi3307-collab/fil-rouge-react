@@ -3,39 +3,118 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
   gap: var(--space-4);
   margin-bottom: var(--space-6);
 }
 
+
+/* Catégories */
 .filters__categories {
   display: flex;
+  align-items: center;
   gap: var(--space-2);
+
   flex-wrap: wrap;
 }
 
+
+/* Boutons / chips */
 .filters__chip {
-  padding: 0.5rem 1rem;
+  padding: 0.55rem 1.1rem;
+
   border-radius: 999px;
+
   border: 1.5px solid var(--color-border);
+
+  background: transparent;
+
   font-size: var(--fs-sm);
   color: var(--color-ink-soft);
-  transition: all var(--transition-base);
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base);
 }
 
+
+/* Survol */
 .filters__chip:hover {
+  border-color: var(--color-brass);
+  color: var(--color-ink);
+
+  transform: translateY(-2px);
+}
+
+
+/* Catégorie sélectionnée */
+.filters__chip.is-active {
+  background: var(--color-ink);
+
+  border-color: var(--color-ink);
+
+  color: var(--color-bg);
+
+  transform: none;
+}
+
+
+/* Select de tri */
+.filters__sort {
+  padding: 0.65rem 2.2rem 0.65rem 1rem;
+
+  border-radius: var(--radius-sm);
+
+  border: 1.5px solid var(--color-border);
+
+  background-color: var(--color-surface);
+
+  color: var(--color-ink);
+
+  font-size: var(--fs-sm);
+
+  cursor: pointer;
+
+  outline: none;
+
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+
+/* Select au survol */
+.filters__sort:hover {
   border-color: var(--color-brass);
 }
 
-.filters__chip.is-active {
-  background: var(--color-ink);
-  border-color: var(--color-ink);
-  color: var(--color-bg);
+
+/* Select lorsqu'il est sélectionné */
+.filters__sort:focus {
+  border-color: var(--color-brass);
+
+  box-shadow: 0 0 0 3px rgba(202, 162, 61, 0.12);
 }
 
-.filters__sort {
-  padding: 0.6rem 0.9rem;
-  border-radius: var(--radius-sm);
-  border: 1.5px solid var(--color-border);
-  background: var(--color-surface);
-  font-size: var(--fs-sm);
+
+/* Responsive */
+@media (max-width: 640px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .filters__categories {
+    justify-content: center;
+  }
+
+
+  .filters__sort {
+    width: 100%;
+  }
 }
